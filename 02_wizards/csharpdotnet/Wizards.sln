@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizards", "Wizards\Wizards.csproj", "{8E5BA036-B647-4727-B14D-98F09063040D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardsTests", "WizardsTests\WizardsTests.csproj", "{B284C8CA-EA13-4073-8F51-780EEECC964B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E5BA036-B647-4727-B14D-98F09063040D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5BA036-B647-4727-B14D-98F09063040D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5BA036-B647-4727-B14D-98F09063040D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5BA036-B647-4727-B14D-98F09063040D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B284C8CA-EA13-4073-8F51-780EEECC964B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B284C8CA-EA13-4073-8F51-780EEECC964B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B284C8CA-EA13-4073-8F51-780EEECC964B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B284C8CA-EA13-4073-8F51-780EEECC964B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
