@@ -1,1 +1,1 @@
-python -m unittest -v calculatorTest
+python -m unittest discover

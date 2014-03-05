@@ -18,8 +18,8 @@ class Calculator:
 	def calculate(self, s):
 		if s == '':
 			return 0
-		if s.find("+") >= 0 or s.find("*") >= 0:
-			op = self.ops[s[1]]
-			return reduce(op["op"], map(int, s.split(s[1])), op["init"])
-
+		for operator in self.ops.keys():
+			if s.find(operator) >= 0:
+				op = self.ops[operator]
+				return reduce(op["op"], map(int, s.split(operator)), op["init"])
 		return int(s)
