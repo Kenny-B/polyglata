@@ -2,23 +2,12 @@
 # http://www.artima.com/forums/flat.jsp?forum=106&thread=98196 no "pythonic way" of doing it.
 from functools import reduce
 
-ops = {
-	"+": {
-		"op": lambda x,y: x + y,
-		"init": 0
-	},
-	"*": {
-		"op": lambda x,y: x * y,
-		"init": 1
-	}
-};
+ops = (("+", lambda x,y: x + y, 0), ("*", lambda x,y: x * y, 1))
 
-# is there a way to use JSON-like op.op instead of op["op"]?
 def calculate(s):
 	if s == '':
 		return 0
-	for operator in ops.keys():
+	for operator, operatorFn, start in ops:
 		if s.find(operator) >= 0:
-			op = ops[operator]
-			return reduce(op["op"], [int(v) for v in s.split(operator)], op["init"])
+			return reduce(operatorFn, [int(nr) for nr in s.split(operator)], start)
 	return int(s)
