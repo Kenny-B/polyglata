@@ -17,7 +17,7 @@
             this.spellBook = new List<Spell>();
         }
 
-        public string Cast(Spell spell)
+        public virtual string Cast(Spell spell)
         {
             if (!spellBook.Contains(spell))
             {

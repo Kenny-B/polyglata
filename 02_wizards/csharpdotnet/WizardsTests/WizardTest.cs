@@ -23,7 +23,7 @@
         [TestMethod]
         public void AsDivineWizard_CastIllusionSpellsNotMemorized_Fumble()
         {
-            Spell animateDead = new Spell("Animate Dead", SpellSchool.Necromancy);
+            Spell animateDead = new Spell("Animate Dead", SpellSchool.Illusion);
             var wizard = new Wizard(SpellSchool.Divination);
 
             Assert.AreEqual("fumble", wizard.Cast(animateDead));

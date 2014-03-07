@@ -5,9 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>99bc1b39-5e92-4cba-adb7-8391b2ba0142</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pyWizards.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>test_Wizard.py</StartupFile>
+    <SearchPath>..\..\csharpdotnet\Wizards\bin\Debug</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
     <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
@@ -25,7 +24,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="pyWizards.py" />
+    <None Include="test_Wizard.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
@@ -36,6 +35,10 @@
       <Project>{8e5ba036-b647-4727-b14d-98f09063040d}</Project>
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sorcerer.py" />
+    <Compile Include="test_Sorcerer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
