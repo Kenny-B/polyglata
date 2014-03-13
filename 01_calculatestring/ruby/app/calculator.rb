@@ -18,7 +18,7 @@ class Calculator
 end
 
 # what I would normally do:
-	#@ops = { 
+	#@ops = {
 	#	"*" => ->(a,b) { a * b },	# or lambda {|a,b| a*b}
 	#	"+" => ->(a,b) { a + b }
 	#}
