@@ -1,0 +1,10 @@
+{
+  "name": "javascript",
+  "version": "0.0.0",
+  "description": "crawler",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-jasmine-node": "~0.2.1"
+  }
+}

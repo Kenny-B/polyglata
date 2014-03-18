@@ -4,6 +4,7 @@
 *.dll
 *.class
 **/bin/**
+**/node_modules/**
 **/__pycache__/**
 *.pyc
 *.sublime-workspace
