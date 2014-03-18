@@ -12,6 +12,8 @@ Implement a single method on your `Crawler`: `crawl(url, exportfile)`. This shou
 
 That's it! Shouldn't be too difficult, right? That depends on the language and the built-in library juice (batteries included, right Python?) :-)
 
+**No Cheating Please**; only use core libraries, no external packages or modules! That will make things a bit more complicated (in some languages, that is).
+
 ## Possible addons
 
 Since you'll be writing unit tests, you'll need a reliable url you don't have direct control of (google?). That's generally speaking not a good idea as an integration test. Solution? Write a **stub HTTP web server** which serves a single HTML file for you to crawl on. That way, your test controls the data. 
