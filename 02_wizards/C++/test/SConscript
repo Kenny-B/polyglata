@@ -1,5 +1,8 @@
-env = Environment(CXX = 'g++', CPPPATH = './:#src/:#lib/gtest/include')
+Import('env', 'gtest', 'src')
+env = env.Clone(CPPPATH = './:#src/:#lib/gtest/include')
 
 env.Append(LIBPATH = ['#lib/gtest', '#src'])
-env.Append(LIBS = ['libgtest.dylib', 'libsample1.dylib'])
-env.Program(target = 'sampletest', source = Glob('*.cc'))
+env.Append(LIBS = [gtest, src])
+out = env.Program(target = 'sampletest', source = Glob('*.cc'))
+
+Return('out')

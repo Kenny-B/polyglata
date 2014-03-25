@@ -8,8 +8,9 @@
 **/__pycache__/**
 *.pyc
 *.sublime-workspace
-*.sconsign.*
+*.sconsign.dblite
 *.o
 *.os
 *.a
 *.dylib
+**/README.html

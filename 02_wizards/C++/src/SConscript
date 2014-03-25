@@ -1,2 +1,5 @@
-env = Environment(CXX = 'g++', CPPPATH = './')
-env.Library(target = 'sample1', source = Glob('*.cc'))
+Import('env')
+env = env.Clone(CPPPATH = './')
+src = env.Library(target = 'sample1', source = Glob('*.cc'))
+
+Return('src')

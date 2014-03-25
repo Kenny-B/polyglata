@@ -1,14 +1,15 @@
+# Main scons SConstruct file. Tested working with OSX 10.9 & Cygwin (g++, scons, python package installed)
+# You can use 'watchr' or something similar to rebuild every time some files changed in src or test.
 
-# todo define global vars here (CXX)
-# todo get output name from sconscript files and pass them in Command
-# todo autotest feature? what to rebuild?
 # todo only build gtest if lib not yet found. + in separate build files
+env = Environment(CXX = 'g++')	# gtest is using std::string etc, so no gcc.
 
-SConscript('lib/gtest/SConscript')
-SConscript('src/SConscript')
-SConscript('test/SConscript')
+gtest = env.SConscript('lib/gtest/SConscript', 'env')
+src = env.SConscript('src/SConscript', 'env')
+out = env.SConscript('test/SConscript', 'env gtest src')
 
+# output is an array with path to built binaries. We only built one file - run it (includes gtest_main).
 test = Command( target = "testoutput",
-                source = "./test/sampletest",
-                action = "./test/sampletest" )
+                source = str(out[0]),
+                action = str(out[0]) )
 AlwaysBuild(test)
