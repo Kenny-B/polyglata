@@ -3,6 +3,6 @@ env = env.Clone(CPPPATH = './:#src/:#lib/gtest/include')
 
 env.Append(LIBPATH = ['#lib/gtest', '#src'])
 env.Append(LIBS = [gtest, src])
-out = env.Program(target = 'sampletest', source = Glob('*.cc'))
+out = env.Program(target = 'wizards_unittests', source = Glob('*.cc'))
 
 Return('out')
