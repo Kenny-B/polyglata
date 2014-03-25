@@ -1,8 +1,4 @@
-# Main scons SConstruct file. Tested working with OSX 10.9 & Cygwin (g++, scons, python package installed)
-# You can use 'watchr' or something similar to rebuild every time some files changed in src or test.
-
-# todo only build gtest if lib not yet found. + in separate build files
-env = Environment(CXX = 'g++', CPPPATH = './:#src/:#/../../lib/C++/gtest/include')	# gtest is using std::string etc, so no gcc.
+env = Environment(CXX = 'g++', CPPPATH = './:#src/:#/../../lib/C++/gtest/include')
 
 gtest = env.SConscript('./../../lib/C++/gtest/SConscript', 'env')
 src = env.SConscript('src/SConscript', 'env')

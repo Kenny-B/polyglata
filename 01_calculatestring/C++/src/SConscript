@@ -1,0 +1,5 @@
+Import('env')
+env = env.Clone(CPPPATH = './')
+src = env.Library(target = 'calcstring', source = Glob('*.cc'))
+
+Return('src')
