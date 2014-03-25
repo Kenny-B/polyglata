@@ -1,13 +1,16 @@
 var crawler = require("./../crawler.js").crawler;
 var stubserver = require("./stubserver.js").stubserver;
 var fs = require("fs");
+debugger;
 
 describe("crawling", function() {
 
 	var FILE = "myfile.html";
 	stubserver.serve(8888);
-	beforeEach(function() {
-		fs.unlinkSync(FILE);	// doesn't 100% work on Windows, still a handle somewhere?
+	afterEach(function() {
+		if(fileWritten()) {
+			fs.unlinkSync(FILE);	// doesn't 100% work on Windows, still a handle somewhere?
+		}
 	});
 	function fileWritten() {
 		return fs.existsSync(FILE);
