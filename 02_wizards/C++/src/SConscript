@@ -1,0 +1,2 @@
+env = Environment(CXX = 'g++', CPPPATH = './')
+env.Library(target = 'sample1', source = Glob('*.cc'))

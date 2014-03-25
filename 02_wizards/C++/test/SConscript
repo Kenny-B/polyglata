@@ -1,0 +1,5 @@
+env = Environment(CXX = 'g++', CPPPATH = './:#src/:#lib/gtest/include')
+
+env.Append(LIBPATH = ['#lib/gtest', '#src'])
+env.Append(LIBS = ['libgtest.dylib', 'libsample1.dylib'])
+env.Program(target = 'sampletest', source = Glob('*.cc'))

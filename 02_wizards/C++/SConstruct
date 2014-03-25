@@ -1,0 +1,14 @@
+
+# todo define global vars here (CXX)
+# todo get output name from sconscript files and pass them in Command
+# todo autotest feature? what to rebuild?
+# todo only build gtest if lib not yet found. + in separate build files
+
+SConscript('lib/gtest/SConscript')
+SConscript('src/SConscript')
+SConscript('test/SConscript')
+
+test = Command( target = "testoutput",
+                source = "./test/sampletest",
+                action = "./test/sampletest" )
+AlwaysBuild(test)
