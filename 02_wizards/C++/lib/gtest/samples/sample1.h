@@ -1,4 +1,4 @@
-// Copyright 2006, Google Inc.
+// Copyright 2005, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -26,33 +26,18 @@
 // THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+// A sample program demonstrating using Google C++ testing framework.
 //
 // Author: wan@google.com (Zhanyong Wan)
-//
-// Google C++ Testing Framework definitions useful in production code.
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_PROD_H_
-#define GTEST_INCLUDE_GTEST_GTEST_PROD_H_
+#ifndef GTEST_SAMPLES_SAMPLE1_H_
+#define GTEST_SAMPLES_SAMPLE1_H_
 
-// When you need to test the private or protected members of a class,
-// use the FRIEND_TEST macro to declare your tests as friends of the
-// class.  For example:
-//
-// class MyClass {
-//  private:
-//   void MyMethod();
-//   FRIEND_TEST(MyClassTest, MyMethod);
-// };
-//
-// class MyClassTest : public testing::Test {
-//   // ...
-// };
-//
-// TEST_F(MyClassTest, MyMethod) {
-//   // Can call MyClass::MyMethod() here.
-// }
+// Returns n! (the factorial of n).  For negative n, n! is defined to be 1.
+int Factorial(int n);
 
-#define FRIEND_TEST(test_case_name, test_name)\
-friend class test_case_name##_##test_name##_Test
+// Returns true iff n is a prime number.
+bool IsPrime(int n);
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_PROD_H_
+#endif  // GTEST_SAMPLES_SAMPLE1_H_

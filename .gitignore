@@ -8,3 +8,8 @@
 **/__pycache__/**
 *.pyc
 *.sublime-workspace
+*.sconsign.*
+*.o
+*.os
+*.a
+*.dylib

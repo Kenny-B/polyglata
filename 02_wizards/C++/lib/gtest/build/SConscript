@@ -1,9 +1,0 @@
-# construction variables: http://www.scons.org/doc/0.96.90/HTML/scons-user/a3061.html
-env = Environment(CXX = 'g++',
-									CPPPATH = './:./include')
-
-# add to library search path env.Append(LIBPATH = ['/usr/local/lib/'])
-# add to libraries link path env.Append(LIBS = ['SDL_image','GL'])
-
-env.Append(CXXFLAGS = ['-g', '-Wall', '-Wextra', '-pthread'])
-env.Library(target = 'gtest', source = ['src/gtest-all.cc', 'src/gtest_main.cc'])
