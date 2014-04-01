@@ -11,8 +11,13 @@
 			[ _, _, _ ]
 		];
 
+		function mid() {
+			return {x: 1, y: 1};
+		}
+
 		return {
 			board: board,
+			mid: mid,
 			pieces: {
 				X: X,
 				O: O,

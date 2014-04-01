@@ -21,6 +21,28 @@
 		});
 	}
 
+	function dict(arr) {
+		guardArr(arr);
+		var map = {};
+		arr.forEach(function(elem, i) {
+			if(!map[elem]) {
+				map[elem] = [i];
+			} else {
+				map[elem].push(i);
+			}
+		});
+		return map;
+	}
+
+	// http://stackoverflow.com/questions/6428192/get-new-x-y-coordinates-of-a-point-in-a-rotated-image
+	function reverseRotate90Coords(coords, midpoints) {
+	    var a = -90 * Math.PI / 180;
+	    return {
+	    	x: (coords.x - midpoints.x) * Math.cos(a) - (coords.y - midpoints.y) * Math.sin(a) + midpoints.x,
+	    	y: (coords.x - midpoints.x) * Math.sin(a) + (coords.y - midpoints.y) * Math.cos(a) + midpoints.y
+		};
+	}
+
 	function rotate90(arr) {
 		guardArr(arr) && guardMultidimensional(arr);
 
@@ -37,6 +59,8 @@
 	  return rotated;
 	}
 
+	exports.reverseRotate90Coords = reverseRotate90Coords;
+	exports.dict = dict;
 	exports.rotate90 = rotate90;
 	exports.unique = unique;
 

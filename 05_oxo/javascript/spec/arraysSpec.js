@@ -26,6 +26,46 @@ describe("arrays", function() {
 		});
 	});
 
+	describe("to dictionary", function() {
+		it("should throw an exception if no array", function() {
+			expect(function() {
+				arrays.dict("1");
+			}).toThrow();
+		});
+
+		it("should return dictionary of key/values from the array", function() {
+			var expected = {
+				"X": [0, 1, 2, 4],
+				"_": [3]
+			};
+			expect(arrays.dict(["X", "X", "X", "_", "X"])).toEqual(expected);
+		});
+
+		it("should return empty object if array is empty", function() {
+			expect(arrays.dict([])).toEqual({});
+		});
+
+		it("should return object with one index as value if single element in array", function() {
+			expect(arrays.dict(["X"])).toEqual({ "X": [0] });
+		});		
+	});
+
+	describe("reverse rotate 90 degrees coords", function() {
+		it("should rotate edges to -90 degrees given 3x3 matrix", function() {
+			var midpt = {x: 1, y: 1};
+			// why is one of those not working?
+			expect(arrays.reverseRotate90Coords({x: 0, y: 2}, midpt)).toEqual({x: 2, y: 2});
+			expect(arrays.reverseRotate90Coords({x: 2, y: 2}, midpt)).toEqual({x: 2, y: 0});
+			expect(arrays.reverseRotate90Coords({x: 2, y: 0}, midpt)).toEqual({x: 0, y: 0});
+			expect(arrays.reverseRotate90Coords({x: 0, y: 0}, midpt)).toEqual({x: 0, y: 2});
+		});
+
+		it("should not rotate midpoint itself", function() {
+			var midpt = {x: 1, y: 1};
+			expect(arrays.reverseRotate90Coords(midpt, midpt)).toEqual(midpt);
+		});
+	});
+
 	describe("rotate 90 degrees", function() {
 		var arr;
 		beforeEach(function() {
