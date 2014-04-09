@@ -1,3 +1,4 @@
+# C-MED impl @ 9/04/2014
 def calculate(numbers)
 	x = numbers.split "+"
 	if x.length != 1
