@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wgroeneveld/polyglata.svg?branch=master)](https://travis-ci.org/wgroeneveld/polyglata)
+
 # Polyglata - the Polyglot kata labs
 
 ## What's this?
