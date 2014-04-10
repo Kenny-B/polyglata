@@ -10,6 +10,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
     <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>    
     <InterpreterVersion>2.7</InterpreterVersion>
     <OutputPath>.</OutputPath>
     <Name>pyWizards</Name>

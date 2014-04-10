@@ -2,15 +2,15 @@
 {
     #region
 
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Wizards;
+    using NUnit.Framework;
 
     #endregion
 
-    [TestClass]
+    [TestFixture]
     public class WizardTest
     {
-        [TestMethod]
+        [Test]
         public void AsDivineWizard_CastNecromancySpellsFromBook_NotEffective()
         {
             Spell animateDead = new Spell("Animate Dead", SpellSchool.Necromancy);
@@ -20,7 +20,7 @@
             Assert.AreEqual("Animate Dead", wizard.Cast(animateDead));
         }
 
-        [TestMethod]
+        [Test]
         public void AsDivineWizard_CastIllusionSpellsNotMemorized_Fumble()
         {
             Spell animateDead = new Spell("Animate Dead", SpellSchool.Illusion);
@@ -29,7 +29,7 @@
             Assert.AreEqual("fumble", wizard.Cast(animateDead));
         }
 
-        [TestMethod]
+        [Test]
         public void AsDivineWizard_CastDivineSpellFromBook_Effective()
         {
             Spell trueSight = new Spell("TrueSight", SpellSchool.Divination);

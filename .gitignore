@@ -19,3 +19,5 @@
 !lib/**/*.dll
 !lib/**/*.exe
 **/target/**
+**/TestResult.xml
+*.mdb

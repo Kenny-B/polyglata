@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyWizards", "pyWizards.pyproj", "{99BC1B39-5E92-4CBA-ADB7-8391B2BA0142}"
 EndProject

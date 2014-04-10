@@ -3,4 +3,5 @@ notifications:
 language: ruby
 rvm:
   - 2.0.0
-script: sh -c 'cd 01_calculatestring/ruby && rake'
+script:
+  - sh -c 'cd 01_calculatestring/ruby && rake'
