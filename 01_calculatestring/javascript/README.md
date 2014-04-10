@@ -1,3 +1,12 @@
+### Building & testing
+
+It's a node project, initialized by `npm init` so there's a `package.json` file describing how to run the tests when you execute the command
+
+```
+npm test
+```
+
+- It uses jasmine - see below. 
 
 ### Debugging
 

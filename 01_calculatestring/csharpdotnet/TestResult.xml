@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="./StringCalculator/bin/Debug/StringCalculator.dll" total="23" failures="2" not-run="0" date="2014-04-10" time="10:50:02">
+  <environment nunit-version="2.4.8.0" clr-version="4.0.30319.17020" os-version="Microsoft Windows NT 6.1.7601.65536 Service Pack 1" platform="Win32NT" cwd="D:\Github\polyglata\01_calculatestring\csharpdotnet" machine-name="HI44700" user="bkwog" user-domain="HI44700" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="./StringCalculator/bin/Debug/StringCalculator.dll" success="False" time="0.057" asserts="0">
+    <results>
+      <test-suite name="StringCalculator" success="False" time="0.052" asserts="0">
+        <results>
+          <test-suite name="StringCalculatorTests" success="False" time="0.047" asserts="0">
+            <results>
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_10divideby5times2_Returns14" executed="True" success="True" time="0.006" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_10times5divideby7_Returns7" executed="True" success="False" time="0.004" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: 7
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at StringCalculator.StringCalculatorTests.Calculate_10times5divideby7_Returns7 () [0x00000] in <filename unknown>:0
+at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_2plus3minus4_Returns1" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_2plus9divideby3minus3_Returns1" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_2plusminus4_ReturnsMinus2" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_2times4minus3divideby3_Returns7" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_3Divide2_Returns1" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_3minusminus3_Returns6" executed="True" success="False" time="0.000" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: 6
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at StringCalculator.StringCalculatorTests.Calculate_3minusminus3_Returns6 () [0x00000] in <filename unknown>:0
+at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_3Plus_ThrowsArgumentException" executed="True" success="True" time="0.000" asserts="0" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_3Plus4_7" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_3Times_ThrowsArgumentException" executed="True" success="True" time="0.001" asserts="0" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_4Times2_8" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_77_7" executed="True" success="True" time="0.001" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_7Modulus2_Returns1" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_8Divide2_Returns4" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_DivideBy0_ThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_EmptyString_Returns0" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_InputNull_Returns0" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_minus3plus2_Returns1" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_stringNotNumeric_ThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_ThreePlusFour_ReturnsSeven" executed="True" success="True" time="0.000" asserts="1" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_Times3_ThrowsArgumentException" executed="True" success="True" time="0.000" asserts="0" />
+              <test-case name="StringCalculator.StringCalculatorTests.Calculate_WithSpaces_ReturnsSameResult" executed="True" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

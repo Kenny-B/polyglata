@@ -16,3 +16,6 @@
 **/README.html
 *.stackdump
 .DS_Store
+!lib/**/*.dll
+!lib/**/*.exe
+**/target/**

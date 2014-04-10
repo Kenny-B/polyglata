@@ -1,4 +1,4 @@
-w# python 3: Removed reduce(). Use functools.reduce() if you really need it; however, 99 percent of the time an explicit for loop is more readable.
+# python 3: Removed reduce(). Use functools.reduce() if you really need it; however, 99 percent of the time an explicit for loop is more readable.
 # http://www.artima.com/forums/flat.jsp?forum=106&thread=98196 no "pythonic way" of doing it.
 from functools import reduce
 

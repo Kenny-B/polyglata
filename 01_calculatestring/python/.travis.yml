@@ -1,0 +1,8 @@
+notifications:
+  email: false
+language: python
+python:
+  - "3.3"
+install:
+  - pip install nosetests
+script: nosetests
